@@ -5,6 +5,9 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 
+postgres://mini_golf_db_user:KKBca0i4Qs0PWsPYagFnOFCsQbCzF0Qu@dpg-co7avov109ks7385ifn0-a.oregon-postgres.render.com/mini_golf_db
+
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
